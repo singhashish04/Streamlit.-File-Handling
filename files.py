@@ -7,13 +7,13 @@ df = st.file_uploader('Upload the CSV file : ', type = ['csv','xlsx'])
 
 # Loading CSV Files
 st.subheader('Loading the CSV files')
-df = pd.read_csv('C:\\Users\\ashis\\GFG\\Atom\\Products.csv')        # here we use \ to \\  , so we don't show error
+df = pd.read_csv('Products.csv')        
 if df is not None:
     st.table(df.head())
 
 # Dealing with Image
 st.subheader('Dealing with Image Directly')
-st.image('C:\\Users\\ashis\\GFG\\Atom\\img.png')                     # here we use \ to \\  , so we don't show error
+st.image('img.png')                     
 
 # Dealing with Image while uploading
 st.subheader('Dealing with Image while uploading')
@@ -23,7 +23,7 @@ if img_file is not None:
 
 # Dealing with Audio
 st.subheader('Dealing with Audio Directly')
-st.audio('C:\\Users\\ashis\\GFG\\Atom\\song.mp3')        # here we use \ to \\  , so we don't show error
+st.audio('song.mp3')        
 
 # Dealing with Audio while Uploading
 st.subheader('Dealing with Audio while Uploading')
